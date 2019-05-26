@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>433</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGame">
+    <property name="title">
+     <string>Game</string>
+    </property>
+    <widget class="QMenu" name="menuConnect_to_server">
+     <property name="title">
+      <string>Connect to server</string>
+     </property>
+     <addaction name="actionPlayer_VS_Computer"/>
+     <addaction name="actionPlayers_VS_Player"/>
+    </widget>
+    <addaction name="menuConnect_to_server"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <addaction name="menuGame"/>
+  </widget>
+  <action name="actionClose">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Close game</string>
+   </property>
+  </action>
+  <action name="actionPlayer_VS_Computer">
+   <property name="text">
+    <string>Player VS Computer</string>
+   </property>
+  </action>
+  <action name="actionPlayers_VS_Player">
+   <property name="text">
+    <string>Players VS Player</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
